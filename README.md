@@ -60,6 +60,7 @@ The list of integrations that are available in this gem includes:
   * ActiveJob<sup>[[link](#activejob)]</sup>
   * Resque<sup>[[link](#resque)]</sup>
   * Sidekiq<sup>[[link](#sidekiq)]</sup>
+  * Shoryuken<sup>[[link](#shoryuken)]</sup>
   * DelayedJob<sup>[[link](#delayedjob)]</sup>
 * Other libraries
   * Rake<sup>[[link](#rake)]</sup>
@@ -311,6 +312,17 @@ require 'airbrake/delayed_job/plugin'
 ```
 
 If you required DelayedJob before Airbrake, then you don't even have to `require`
+anything manually and it should just work out-of-box.
+
+### Shoryuken
+
+Simply `require` our plugin and you're done:
+
+```ruby
+require 'airbrake/shoryuken/error_handler'
+```
+
+If you required Shoryuken before Airbrake, then you don't even have to `require`
 anything manually and it should just work out-of-box.
 
 ### Rake
