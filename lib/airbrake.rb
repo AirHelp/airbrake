@@ -20,6 +20,7 @@ require 'airbrake/rake/task_ext' if defined?(Rake::Task)
 require 'airbrake/resque/failure' if defined?(Resque)
 require 'airbrake/sidekiq/error_handler' if defined?(Sidekiq)
 require 'airbrake/delayed_job/plugin' if defined?(Delayed)
+require 'airbrake/shoryuken/error_handler' if defined?(Shoryuken)
 
 ##
 # This module reopens the original Airbrake module from airbrake-ruby and adds
